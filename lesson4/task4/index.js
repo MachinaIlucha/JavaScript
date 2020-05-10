@@ -1,7 +1,7 @@
 let n = 24;
-let s ='';
+let sum ='';
 
 for (var i = 0; i <= n; i++) {
-	s += i;
+	sum += i;
 }
-console.log(s)
+console.log(sum)
