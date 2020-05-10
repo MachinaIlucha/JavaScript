@@ -1,6 +1,6 @@
 let m = 10;
-let n = 20;
-let res = 1;
+const n = 20;
+let result = 1;
 
 do {
 	if (m % 2 === 1)
@@ -8,4 +8,4 @@ do {
 	m++;
 } while(m <= n);
 
-console.log('Result: ', res);
+console.log('Result: ' + result);
