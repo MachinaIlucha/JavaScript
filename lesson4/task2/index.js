@@ -1,11 +1,9 @@
-let m = 10;
-const n = 20;
 let result = 1;
 
-
-for (var i = m; m <= n; i++) {
-	if (i % 2 === 1)
-		res *= i;
+for (let m = 10; m <= 20; m++) {
+	if (m % 2 === 1){
+		result *= m;
+	}
 }
 
 console.log('Result: ' + result);
