@@ -1,18 +1,10 @@
 getPrimes(17);
 
 function getPrimes(a){
-	for (var i = 0; i <= a; i++) {
-		if (isPrime(i)) 
-			console.log(i);
-	}
-}
-
-function isPrime(x){     
-      d = x-1;
-      while (d > 1){
-        if ((x % d) == 0) 
-        	return false;
-        d--;
-      }
-      return true;
-  }
+         for (var i = 0; i <= a; i++) {         
+          for (var j = 2; j < i; j++) {           
+           if(i % j == 0) break;
+            console.log(i);
+          }                  
+         }
+ }
