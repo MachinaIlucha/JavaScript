@@ -1,5 +1,3 @@
-getPrimes(17);
-
 function getPrimes(n)
 {
    for (var i = 2; i <= n; i++) {
