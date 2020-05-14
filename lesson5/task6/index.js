@@ -1,10 +1,18 @@
 function getPrimes(a)
 {
-   for (let i = 1; i <= a; i++) {
+	let arr = [];
+	let c = 0;
+   for (let i = 2; i <= a; i++) {
    	for (let j = 2; j < i; j++) {
-   		if (i % j === 0)
-   			i++;
-   	}
-   	console.log(i);
+   		if (i % j === 0){
+			   i++;
+		   }			
+	   }
+	   arr[c] = i;
+	   c++;
+   }
+
+   for (let index = 0; index < arr.length; index++) {
+	   console.log(arr[index]);  
    }
 }
