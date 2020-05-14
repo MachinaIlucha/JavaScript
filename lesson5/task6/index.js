@@ -1,7 +1,9 @@
-function getPrimes(n)
+getPrimes(17);
+
+function getPrimes(a)
 {
-   for (var i = 2; i <= n; i++) {
-   	for (var j = 2; j < i; j++) {
+   for (let i = 2; i <= a; i++) {
+   	for (let j = 2; j < i; j++) {
    		if (i % j === 0)
    			i++;
    	}
