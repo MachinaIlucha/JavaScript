@@ -1,4 +1,5 @@
 function swap(arr){
-    arr[arr.length - 1] = arr[arr.length - 1];
-    return arr;
+    let a = arr;
+    a[a.length - 1] = a[a.length - 1];
+    return a;
 }
