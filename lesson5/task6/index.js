@@ -1,11 +1,18 @@
-getPrimes(98);
+getPrimes(17);
 
 function getPrimes(a){
-	nextPrime:
-	for (let i = 2; i <= a; i++) { // Для всех i...
-  		for (let j = 2; j < i; j++) { // проверить, делится ли число..
-    		if (i % j == 0) continue nextPrime; // не подходит, берём следующее
-  		}
-  		console.log(i);
+	for (var i = 0; i <= a; i++) {
+		if (isPrime(i)) 
+			console.log(i);
 	}
 }
+
+function isPrime(x){     
+      d = x-1;
+      while (d > 1){
+        if ((x % d) == 0) 
+        	return false;
+        d--;
+      }
+      return true;
+  }
