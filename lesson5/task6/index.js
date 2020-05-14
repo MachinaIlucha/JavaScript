@@ -1,10 +1,20 @@
 getPrimes(17);
 
-function getPrimes(a){
-         for (var i = 0; i <= a; i++) {         
-          for (var j = 2; j < i; j++) {           
-           if(i % j == 0) break;
-            console.log(i);
-          }                  
-         }
- }
+function getPrimes(a)
+{
+    var store  = [], i, j, primes = [];
+    for (i = 2; i <= a; ++i) 
+    {
+        if (!store [i]) 
+          {
+            primes.push(i);
+            for (j = i << 1; j <= a; j += i) 
+            {
+                store[j] = true;
+            }
+        }
+    }
+    for (var i = 0; i < primes.length; i++) {
+    	console.log(primes[i]);
+    }
+}
