@@ -8,7 +8,7 @@ function squareArray(arr){
 function copyArray(arrFrom, arrTo){
     let i = 0;
     arrFrom.forEach(element => {
-        arrTo[i] = element;
+        arrTo[i] = element * element;
         i++;
     });
 }
