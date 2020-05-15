@@ -15,7 +15,7 @@ function sortAsc(array){
         return array;
 }
 
-function sortDesk(array){
+function sortDesc(array){
     if(!Array.isArray(array))
         return null;
 
