@@ -5,6 +5,7 @@ function swap(arr){
         a[i] = arr[i]; 
     }
 
-    a.push(a[0]);
+    let c = a[0];
+    a.push(c);
     return a;
 }
