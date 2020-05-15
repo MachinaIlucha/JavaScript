@@ -6,11 +6,16 @@ function removeDuplicates(arr){
     if(!Array.isArray(arr))
         return null;
 
-        let unique = {};
-        arr.forEach(function(i) {
-          if(!unique[i]) {
-            unique[i] = true;
-          }
-        });
-        return Object.keys(unique);
+    var seen = {};
+    var out = [];
+    var len = a.length;
+    var j = 0;
+    for(var i = 0; i < len; i++) {
+         var item = a[i];
+         if(seen[item] !== 1) {
+               seen[item] = 1;
+               out[j++] = item;
+         }
+    }
+    return out;
 }
