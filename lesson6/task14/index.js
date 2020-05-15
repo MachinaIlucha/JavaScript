@@ -1,7 +1,8 @@
 function includes(arr, num){
+    let isIn = false;
     arr.forEach(el => {
         if(el === num)
-            return true;
+            isIn = true;
     });
-    return false
+    return isIn;
 }
