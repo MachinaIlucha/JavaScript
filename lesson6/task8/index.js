@@ -5,5 +5,4 @@ function increaseEvenEl(arr, delta){
         if(element % 2 === 0)
             element += delta;
     });
-    return arr;
 }
