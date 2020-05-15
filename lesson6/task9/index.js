@@ -6,5 +6,15 @@ function reverseArray(arr){
     if(!Array.isArray(arr))
         return null;
 
-    return arr.reverse();
+    let arrTo = [];
+    return copyArray(arr, arrTo).reverse();
+}
+
+function copyArray(arrFrom, arrTo){
+    let i = 0;
+    arrFrom.forEach(element => {
+       arrTo[i] = element;
+       i++;
+    });
+    return arrTo;
 }
