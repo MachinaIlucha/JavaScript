@@ -1,35 +1,35 @@
-function sortAsc(arr){
-    if(!Array.isArray(arr))
+function sortAsc(array){
+    if(!Array.isArray(array))
         return null;
 
     let sorted = false
   while (!sorted){
     sorted = true;
-    arr.forEach(function (element, index, array){
-      if (element > array[index+1]) {
-        array[index] = array[index+1];
-        array[index+1] = element;
+    arr.forEach(function (element, index, arr){
+      if (element > arr[index+1]) {
+        arr[index] = arr[index+1];
+        arr[index+1] = element;
         sorted = false;
       }
     });
   }
-  return arr;
+  return array;
 }
 
-function sortDesk(arr){
-    if(!Array.isArray(arr))
+function sortDesk(array){
+    if(!Array.isArray(array))
         return null;
 
     let sorted = false
   while (!sorted){
     sorted = true;
-    arr.forEach(function (element, index, array){
-      if (element < array[index+1]) {
-        array[index] = array[index+1];
-        array[index+1] = element;
+    arr.forEach(function (element, index, arr){
+      if (element < arr[index+1]) {
+        arr[index] = arr[index+1];
+        arr[index+1] = element;
         sorted = false;
       }
     });
   }
-  return arr;
+  return array;
 }
