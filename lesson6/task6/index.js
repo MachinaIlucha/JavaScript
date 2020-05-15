@@ -11,4 +11,5 @@ function copyArray(arrFrom, arrTo){
         arrTo[i] = element * element;
         i++;
     });
+    return arrTo;
 }
