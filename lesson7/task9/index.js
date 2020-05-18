@@ -1,7 +1,7 @@
 const sum = arr => { 
-    if(!Array.isArray(numbers))
-        return null;
-    let sum = 0;
-    numbers.map(number => sum += number);
-    return sum;
+    if(!Array.isArray(arr))
+        return null; 
+    return arr.reduce(function(a, b) { 
+        return a + b; 
+    });
 }
