@@ -1,12 +1,12 @@
 const withdraw = (clients, balances, client, amount) => {
     let i = 0;
+    let forRet = 0;
 
     clients.forEach(el => {
         if(el === client)
-            break;
-        i++;
-    });   
-
+            forRet = (balances[i] - amount) ? (balances[i] -= amount) : -1;
+        else i++;
+    });  
     
-    return balances[i] -= amount ? (balances[i] -= amount) : -1;
+    return forRet;
 }
